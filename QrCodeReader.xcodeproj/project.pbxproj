@@ -14,6 +14,8 @@
 		9E3E7F3A1AA2A6C600E91D9C /* QrCodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E7F391AA2A6C600E91D9C /* QrCodeReaderTests.swift */; };
 		9E3E7F481AA2A6FF00E91D9C /* QrCodeReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E7F441AA2A6FF00E91D9C /* QrCodeReader.xcdatamodeld */; };
 		9E3E7F491AA2A6FF00E91D9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E7F471AA2A6FF00E91D9C /* ViewController.swift */; };
+		9EA98AF61AA2B7DB007AF428 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA98AF51AA2B7DB007AF428 /* CameraViewController.swift */; };
+		9EC1079E1AA2AB7A00D31836 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC1079D1AA2AB7A00D31836 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		9E3E7F391AA2A6C600E91D9C /* QrCodeReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeReaderTests.swift; sourceTree = "<group>"; };
 		9E3E7F451AA2A6FF00E91D9C /* QrCodeReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QrCodeReader.xcdatamodel; sourceTree = "<group>"; };
 		9E3E7F471AA2A6FF00E91D9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EA98AF51AA2B7DB007AF428 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9EC1079D1AA2AB7A00D31836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC1079E1AA2AB7A00D31836 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 			children = (
 				9E3E7F201AA2A6C600E91D9C /* AppDelegate.swift */,
 				9E3E7F431AA2A6FF00E91D9C /* DataManager */,
+				9EC1079F1AA2AB8600D31836 /* Frameworks */,
 				9E3E7F2A1AA2A6C600E91D9C /* Images.xcassets */,
 				9E3E7F2C1AA2A6C600E91D9C /* LaunchScreen.xib */,
 				9E3E7F271AA2A6C600E91D9C /* Main.storyboard */,
@@ -126,9 +132,18 @@
 		9E3E7F461AA2A6FF00E91D9C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9EA98AF51AA2B7DB007AF428 /* CameraViewController.swift */,
 				9E3E7F471AA2A6FF00E91D9C /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9EC1079F1AA2AB8600D31836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1079D1AA2AB7A00D31836 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E3E7F491AA2A6FF00E91D9C /* ViewController.swift in Sources */,
+				9EA98AF61AA2B7DB007AF428 /* CameraViewController.swift in Sources */,
 				9E3E7F481AA2A6FF00E91D9C /* QrCodeReader.xcdatamodeld in Sources */,
 				9E3E7F211AA2A6C600E91D9C /* AppDelegate.swift in Sources */,
 			);
@@ -425,6 +441,7 @@
 				9E3E7F3F1AA2A6C600E91D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E3E7F401AA2A6C600E91D9C /* Build configuration list for PBXNativeTarget "QrCodeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +450,7 @@
 				9E3E7F421AA2A6C600E91D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
