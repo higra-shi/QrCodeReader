@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Tt-ri-nFR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Tt-ri-nFR">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,15 +26,39 @@
                                     <action selector="showCameraView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fwo-AY-HC6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-aT-Odm">
+                                <rect key="frame" x="16" y="110" width="568" height="30"/>
+                                <state key="normal" title="Create QR Code">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createQrCode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z4d-oF-j6H"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m7g-8h-vPK">
+                                <rect key="frame" x="16" y="148" width="568" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="jKZ-ze-SnB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MZp-sV-eyZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="1sk-1Z-0SU"/>
+                            <constraint firstItem="m7g-8h-vPK" firstAttribute="top" secondItem="7yg-aT-Odm" secondAttribute="bottom" constant="8" id="Na5-bb-f7f"/>
                             <constraint firstItem="MZp-sV-eyZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YQX-6v-3NS"/>
                             <constraint firstItem="MZp-sV-eyZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="aM3-3d-bOa"/>
+                            <constraint firstItem="7yg-aT-Odm" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="d3e-O2-DPa"/>
+                            <constraint firstItem="m7g-8h-vPK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="eEb-qy-WXT"/>
+                            <constraint firstItem="m7g-8h-vPK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hOT-6h-ZgR"/>
+                            <constraint firstItem="7yg-aT-Odm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mBA-Si-CJU"/>
+                            <constraint firstItem="7yg-aT-Odm" firstAttribute="top" secondItem="MZp-sV-eyZ" secondAttribute="bottom" constant="8" id="z8c-PQ-SYs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XSm-nz-03j"/>
+                    <connections>
+                        <outlet property="qrCodeImageView" destination="m7g-8h-vPK" id="DTU-3f-0rI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
